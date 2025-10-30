@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     locale: "en_US",
     images: [
       {
-        url: "https://cv.jarocki.me/opengraph-image",
+        url: "https://andrenevesgomes.is-a.dev/opengraph-image",
         width: 1200,
         height: 630,
         alt: `${RESUME_DATA.name}'s profile picture`,
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: `${RESUME_DATA.name} - Resume`,
     description: RESUME_DATA.about,
-    images: ["https://cv.jarocki.me/opengraph-image"],
+    images: ["https://andrenevesgomes.is-a.dev/opengraph-image"],
   },
 };
 
@@ -80,7 +80,7 @@ export default function ResumePage() {
         </div>
 
         <section
-          className="mx-auto w-full max-w-2xl space-y-8 bg-white print:space-y-4"
+          className="mx-auto w-full max-w-5xl space-y-8 bg-white print:space-y-4 print-keep-together"
           aria-label="Resume Content"
         >
           <SectionErrorBoundary sectionName="Header">
@@ -89,7 +89,7 @@ export default function ResumePage() {
             </Suspense>
           </SectionErrorBoundary>
 
-          <div className="space-y-8 print:space-y-4">
+          <div className="space-y-8 print:space-y-4 print-compact">
             <SectionErrorBoundary sectionName="Summary">
               <Suspense fallback={<SectionSkeleton lines={2} />}>
                 <Summary summary={RESUME_DATA.summary} />

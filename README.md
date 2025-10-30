@@ -1,126 +1,190 @@
-![cv](https://github.com/BartoszJarocki/cv/assets/1017620/79bdb9fc-0b20-4d2c-aafe-0526ad4a71d2)
+<div align="center">
 
-# Minimalist CV
+# 💼 André Gomes
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FBartoszJarocki%2Fcv)
+### Digital Resume & Professional Portfolio
+
+*A modern, interactive CV built for the web*
+
 [![Next.js](https://img.shields.io/badge/Next.js-14-black?logo=next.js)](https://nextjs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue?logo=typescript)](https://www.typescriptlang.org/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-3.4-38B2AC?logo=tailwind-css)](https://tailwindcss.com/)
-[![pnpm](https://img.shields.io/badge/pnpm-8+-F69220?logo=pnpm)](https://pnpm.io/)
+[![GraphQL](https://img.shields.io/badge/GraphQL-API-E10098?logo=graphql)](https://graphql.org/)
 [![Docker](https://img.shields.io/badge/Docker-ready-2496ED?logo=docker)](https://www.docker.com/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-A clean and modern web app that renders a minimalist CV/Resume with a print-friendly layout.
+[View Live](https://andrenevesgomes.is-a.dev) • [Download PDF](#)
 
-## ✨ Features
+</div>
 
-- 📝 **Single Config File** - Update all your resume data in [one place](./src/data/resume-data.tsx)
-- 🎨 **Minimalist Design** - Clean, professional layout focused on content
-- 📱 **Responsive** - Looks great on all devices, from mobile to desktop
-- 🖨️ **Print Optimized** - Specially designed print styles for physical copies
-- ⌨️ **Keyboard Navigation** - Press `Cmd/Ctrl + K` to quickly navigate through sections
-- 🚀 **Fast Performance** - Built with Next.js 14 and optimized for Core Web Vitals
-- 🔄 **Auto Layout** - Sections automatically adjust based on your content
-- 📊 **GraphQL API** - Access your resume data programmatically at `/graphql`
-- 🎯 **SEO Friendly** - Optimized metadata for better search visibility
-- 🐳 **Docker Support** - Easy containerized deployment
+---
 
-## 🛠️ Tech Stack
+## 🎯 Overview
 
-- **Framework**: [Next.js 14](https://nextjs.org/) (App Router)
-- **Language**: [TypeScript](https://www.typescriptlang.org/)
-- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
-- **UI Components**: [shadcn/ui](https://ui.shadcn.com/) (Radix UI)
-- **GraphQL**: [Apollo Server](https://www.apollographql.com/) + [TypeGraphQL](https://typegraphql.com/)
-- **Package Manager**: [pnpm](https://pnpm.io/)
-- **Deployment**: Optimized for [Vercel](https://vercel.com/)
+This is my **personal CV/Resume** presented as a modern web application. Instead of a static PDF, I've built an interactive, responsive, and print-optimized digital resume that showcases both my professional experience and technical capabilities.
 
-## 🚀 Getting Started
+**Why a web-based CV?**
+- 🌐 **Always Accessible** - Share a single link that's always up-to-date
+- 📱 **Multi-Device Optimized** - Perfect viewing experience on any screen
+- 🖨️ **Print-Ready** - Generates a perfect PDF when you need it
+- ⚡ **Lightning Fast** - Optimized performance and Core Web Vitals
+- 🖥️ **SEO Optimized** - Discoverable and indexable by search engines
+- 🎨 **Professional Design** - Clean, minimalist, and focused on content
+
+## ⚡ Key Features
+
+### For Viewers
+- **🎯 Instant Navigation** - Press `Cmd/Ctrl + K` for quick section jumping
+- **📱 Responsive Design** - Optimized for mobile, tablet, and desktop
+- **🖨️ Print Perfect** - One-click printing with professional formatting
+- **🌙 Clean Interface** - Distraction-free reading experience
+
+### For Developers
+- **📊 GraphQL API** - Programmatic access to resume data at `/graphql`
+- **📝 Single Source of Truth** - All content in one configuration file
+- **🔄 Auto-Generated Sitemap** - SEO-optimized structure
+- **🎨 Highly Customizable** - Tailwind CSS + shadcn/ui components
+- **🐳 Docker Ready** - Containerized for easy deployment
+
+## 🏗️ Architecture
+
+```mermaid
+graph TD
+    A[Next.js 14 App Router] --> B[React Components]
+    A --> C[GraphQL API]
+    B --> D[shadcn/ui + Radix]
+    B --> E[Tailwind CSS]
+    C --> F[Apollo Server]
+    F --> G[Resume Data]
+```
+
+### Built With
+
+| Category | Technology |
+|----------|-----------|
+| **Framework** | Next.js 14 with App Router |
+| **Language** | TypeScript 5.0 |
+| **Styling** | Tailwind CSS 3.4 |
+| **UI Library** | shadcn/ui (Radix UI primitives) |
+| **API** | GraphQL with Apollo Server |
+| **Deployment** | Vercel-optimized |
+| **Container** | Docker & Docker Compose |
+
+## 🚀 Quick Start
 
 ### Prerequisites
+```bash
+Node.js 18+
+pnpm 8+
+```
 
-- Node.js 18+ 
-- pnpm 8+
-
-### Installation
-
-1. **Clone the repository**
-
-   ```bash
-   git clone https://github.com/BartoszJarocki/cv.git
-   cd cv
-   ```
-
-2. **Install dependencies**
-
-   ```bash
-   pnpm install
-   ```
-
-3. **Start the development server**
-
-   ```bash
-   pnpm dev
-   ```
-
-4. **Open [http://localhost:3000](http://localhost:3000)** in your browser
-
-5. **Customize your CV**
-   
-   Edit the [src/data/resume-data.tsx](./src/data/resume-data.tsx) file to add your personal information, work experience, education, and skills.
-
-### Available Scripts
+### Local Development
 
 ```bash
-pnpm dev          # Start development server
-pnpm build        # Build for production
-pnpm start        # Start production server
-pnpm lint         # Run ESLint
+# Install dependencies
+pnpm install
+
+# Run development server
+pnpm dev
+
+# Open http://localhost:3000
 ```
 
-## 📁 Project Structure
+### Production Build
 
-```
-src/
-├── app/              # Next.js App Router
-│   ├── layout.tsx    # Root layout with metadata
-│   └── page.tsx      # Main resume page
-├── components/       # React components
-│   ├── ui/          # shadcn/ui components
-│   └── icons/       # Icon components
-├── data/            # Resume data configuration
-│   └── resume-data.tsx
-├── images/          # Static assets
-│   └── logos/       # Company logos
-└── apollo/          # GraphQL server setup
-    ├── resolvers.ts
-    └── type-defs.ts
+```bash
+# Build for production
+pnpm build
+
+# Start production server
+pnpm start
 ```
 
-## 🎨 Customization
+### Docker Deployment
 
-### Resume Data
+```bash
+# Using Docker Compose
+docker compose up -d
 
-All resume content is stored in a single configuration file:
+# Or build manually
+docker build -t cv-app .
+docker run -p 3000:3000 cv-app
+```
+
+## 🚧 Project Structure
+
+```
+cv/
+├── 📱 src/
+│   ├── app/                    # Next.js App Router
+│   │   ├── layout.tsx          # Root layout & metadata
+│   │   ├── page.tsx            # Main CV page
+│   │   ├── components/         # Page-specific components
+│   │   └── graphql/            # GraphQL endpoint
+│   ├── components/
+│   │   ├── ui/                 # Reusable UI components
+│   │   └── icons/              # Custom icon components
+│   ├── data/
+│   │   └── resume-data.tsx     # 📝 CV content (edit this!)
+│   ├── lib/
+│   │   ├── types.ts            # TypeScript definitions
+│   │   └── utils.ts            # Utility functions
+│   └── apollo/                 # GraphQL server setup
+├── 🐳 docker-compose.yaml      # Container orchestration
+├── 🎨 tailwind.config.js       # Styling configuration
+└── 📦 package.json             # Dependencies
+```
+
+## 🎨 Customization Guide
+
+### 1️⃣ Update Your Information
+
+All CV content lives in **one file**:
 
 ```typescript
 // src/data/resume-data.tsx
 export const RESUME_DATA = {
-  name: "Your Name",
-  initials: "YN",
-  location: "Your City, Country",
-  about: "Brief description",
-  summary: "Professional summary",
-  // ... more fields
+  name: "André Gomes",
+  initials: "AG",
+  location: "Lisboa, Portugal, UTC+1",
+  locationLink: "https://www.google.com/maps/place/lisboa",
+  about: "Engineer passionate about building scalable solutions",
+  summary: "Full Stack Engineer with X years of experience...",
+  avatarUrl: "/avatar.jpg",
+  personalWebsiteUrl: "https://yourdomain.com",
+  contact: {
+    email: "your@email.com",
+    tel: "+351123456789",
+    social: [...]
+  },
+  education: [...],
+  work: [...],
+  skills: [...],
+  projects: [...]
 }
 ```
 
-### Styling
+### 2️⃣ Customize Styling
 
-The app uses Tailwind CSS for styling. You can customize:
-- Colors in `tailwind.config.js`
-- Global styles in `src/app/globals.css`
-- Print styles are defined separately for optimal printing
+```bash
+# Colors & Theme
+tailwind.config.js
+
+# Global Styles
+src/app/globals.css
+
+# Component Styles
+src/components/ui/
+```
+
+### 3️⃣ Add Company Logos
+
+```bash
+# Place logos in
+src/images/logos/
+
+# Reference in resume-data.tsx
+logo: CompanyLogo
+```
 
 ## 🐳 Docker Deployment
 
@@ -160,28 +224,15 @@ The app is optimized for printing. For best results:
 - Enable "Background graphics" in print settings
 - Set margins to "Default"
 
-## 🤝 Contributing
-
-Contributions are welcome! Feel free to:
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
 ## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🙏 Acknowledgments
+## 🙏 Credits
 
+This CV is built using the [Minimalist CV template](https://github.com/BartoszJarocki/cv) created by [Bartosz Jarocki](https://github.com/BartoszJarocki).
+
+Special thanks to:
+- [Bartosz Jarocki](https://github.com/BartoszJarocki) for the excellent template
 - [shadcn/ui](https://ui.shadcn.com/) for the beautiful UI components
-- [Vercel](https://vercel.com/) for hosting and deployment
-- All contributors who have helped improve this project
-
----
-
-<p align="center">
-  Made with ❤️ by <a href="https://github.com/BartoszJarocki">Bartosz Jarocki</a>
-</p>
+- [Vercel](https://vercel.com/) for hosting

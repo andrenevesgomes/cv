@@ -2,7 +2,7 @@ import type { StaticImageData } from "next/image";
 
 export type ResumeIcon = React.ComponentType<React.SVGProps<SVGSVGElement>> | StaticImageData;
 
-export type IconType = "github" | "linkedin" | "x" | "globe" | "mail" | "phone";
+export type IconType = "github" | "linkedin" | "x" | "behance" | "medium" | "globe" | "mail" | "phone";
 
 export interface ResumeData {
   name: string;
@@ -15,7 +15,7 @@ export interface ResumeData {
   personalWebsiteUrl: string;
   contact: {
     email: string;
-    tel: string;
+    tel?: string;
     social: Array<{
       name: string;
       url: string;
@@ -57,7 +57,7 @@ export interface GraphQLSocial {
 
 export interface GraphQLContact {
   email: string;
-  tel: string;
+  tel?: string;
   social: GraphQLSocial[];
 }
 
@@ -132,7 +132,7 @@ export function resumeDataToGraphQL(data: ResumeData): GraphQLMe {
     personalWebsiteUrl: data.personalWebsiteUrl,
     contact: {
       email: data.contact.email,
-      tel: data.contact.tel,
+      ...(data.contact.tel && { tel: data.contact.tel }),
       social: data.contact.social.map(({ name, url }) => ({ name, url })),
     },
     education: data.education,
