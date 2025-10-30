@@ -113,8 +113,8 @@ export function reactToString(content: React.ReactNode): string {
     return content.map(reactToString).join("");
   }
   if (typeof content === "object" && content && "props" in content) {
-    const { children } = content.props;
-    if (children) return reactToString(children);
+    const props = content.props as { children?: React.ReactNode };
+    if (props.children) return reactToString(props.children);
   }
   return "";
 }
@@ -132,7 +132,7 @@ export function resumeDataToGraphQL(data: ResumeData): GraphQLMe {
     personalWebsiteUrl: data.personalWebsiteUrl,
     contact: {
       email: data.contact.email,
-      ...(data.contact.tel && { tel: data.contact.tel }),
+      tel: data.contact.tel,
       social: data.contact.social.map(({ name, url }) => ({ name, url })),
     },
     education: data.education,

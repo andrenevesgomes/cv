@@ -6,11 +6,13 @@
 
 *A modern, interactive CV built for the web*
 
-[![Next.js](https://img.shields.io/badge/Next.js-14-black?logo=next.js)](https://nextjs.org/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue?logo=typescript)](https://www.typescriptlang.org/)
+[![Next.js](https://img.shields.io/badge/Next.js-16-black?logo=next.js)](https://nextjs.org/)
+[![React](https://img.shields.io/badge/React-19-61DAFB?logo=react)](https://react.dev/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.9-blue?logo=typescript)](https://www.typescriptlang.org/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-3.4-38B2AC?logo=tailwind-css)](https://tailwindcss.com/)
 [![GraphQL](https://img.shields.io/badge/GraphQL-API-E10098?logo=graphql)](https://graphql.org/)
 [![Docker](https://img.shields.io/badge/Docker-ready-2496ED?logo=docker)](https://www.docker.com/)
+[![Node.js](https://img.shields.io/badge/Node.js-20+-339933?logo=node.js)](https://nodejs.org/)
 
 [View Live](https://andrenevesgomes.is-a.dev) • [Download PDF](#)
 
@@ -49,7 +51,7 @@ This is my **personal CV/Resume** presented as a modern web application. Instead
 
 ```mermaid
 graph TD
-    A[Next.js 14 App Router] --> B[React Components]
+    A[Next.js 16 with Turbopack] --> B[React 19 Components]
     A --> C[GraphQL API]
     B --> D[shadcn/ui + Radix]
     B --> E[Tailwind CSS]
@@ -61,11 +63,13 @@ graph TD
 
 | Category | Technology |
 |----------|-----------|
-| **Framework** | Next.js 14 with App Router |
-| **Language** | TypeScript 5.0 |
+| **Framework** | Next.js 16 with App Router & Turbopack |
+| **Frontend** | React 19 |
+| **Language** | TypeScript 5.9 |
 | **Styling** | Tailwind CSS 3.4 |
 | **UI Library** | shadcn/ui (Radix UI primitives) |
-| **API** | GraphQL with Apollo Server |
+| **API** | GraphQL with Apollo Server 4 |
+| **Build Tool** | Turbopack (Next.js native) |
 | **Deployment** | Vercel-optimized |
 | **Container** | Docker & Docker Compose |
 
@@ -73,9 +77,11 @@ graph TD
 
 ### Prerequisites
 ```bash
-Node.js 18+
+Node.js 20+ (compatible with v25)
 pnpm 8+
 ```
+
+> 💡 **Note**: This project uses Next.js 16 with Turbopack for faster builds and React 19 for improved performance.
 
 ### Local Development
 
@@ -217,22 +223,21 @@ docker run -p 3000:3000 cv-app
 
 No environment variables are required for basic usage. The app works out of the box!
 
-### Print Settings
-
-The app is optimized for printing. For best results:
-- Use Chrome/Chromium for printing
-- Enable "Background graphics" in print settings
-- Set margins to "Default"
 
 ## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🙏 Credits
+---
 
-This CV is built using the [Minimalist CV template](https://github.com/BartoszJarocki/cv) created by [Bartosz Jarocki](https://github.com/BartoszJarocki).
+<div align="center">
 
-Special thanks to:
-- [Bartosz Jarocki](https://github.com/BartoszJarocki) for the excellent template
-- [shadcn/ui](https://ui.shadcn.com/) for the beautiful UI components
-- [Vercel](https://vercel.com/) for hosting
+### 💡 Inspiration
+
+*Built with the [minimalist CV template](https://github.com/BartoszJarocki/cv) foundation, customized and deployed as a personal project.*
+
+**Stack**: Next.js 16 • React 19 • TypeScript 5.9 • Tailwind • GraphQL • Docker
+
+Made with ☕ by André Gomes
+
+</div>
