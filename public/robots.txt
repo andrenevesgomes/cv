@@ -1,0 +1,13 @@
+# Robots.txt for https://andrenevesgomes.is-a.dev
+
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /_next/
+Disallow: /graphql
+
+# Sitemap location
+Sitemap: https://andrenevesgomes.is-a.dev/sitemap.xml
+
+# Crawl-delay for responsible crawling
+Crawl-delay: 1
