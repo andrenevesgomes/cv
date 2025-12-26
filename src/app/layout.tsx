@@ -29,6 +29,13 @@ export const metadata: Metadata = {
     "react",
     "next.js",
     "typescript",
+    "technical product owner",
+    "senior software engineer",
+    "c#",
+    ".net",
+    "azure devops",
+    "power bi",
+    "engineering leadership",
   ],
   authors: [{ name: RESUME_DATA.name }],
   creator: RESUME_DATA.name,
@@ -37,6 +44,9 @@ export const metadata: Metadata = {
     email: false,
     address: false,
     telephone: false,
+  },
+  verification: {
+    google: "60hQl6oI1ReUh1T5bkuw0VLSuAKwVFs_AmmeE64TbXY",
   },
   openGraph: {
     type: "website",

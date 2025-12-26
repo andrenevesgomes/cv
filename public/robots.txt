@@ -8,6 +8,3 @@ Disallow: /graphql
 
 # Sitemap location
 Sitemap: https://andrenevesgomes.is-a.dev/sitemap.xml
-
-# Crawl-delay for responsible crawling
-Crawl-delay: 1
