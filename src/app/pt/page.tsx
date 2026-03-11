@@ -3,14 +3,14 @@ import { Suspense } from "react";
 import { CommandMenu } from "@/components/command-menu";
 import { SectionErrorBoundary } from "@/components/section-error-boundary";
 import { SectionSkeleton } from "@/components/section-skeleton";
-import { RESUME_DATA } from "@/data/resume-data";
+import { RESUME_DATA_PT as RESUME_DATA } from "@/data/resume-data.pt";
 import { generateResumeStructuredData } from "@/lib/structured-data";
-import { Education } from "./components/Education";
-import { Header } from "./components/Header";
-import { Projects } from "./components/Projects";
-import { Skills } from "./components/Skills";
-import { Summary } from "./components/Summary";
-import { WorkExperience } from "./components/WorkExperience";
+import { Education } from "../components/Education";
+import { Header } from "../components/Header";
+import { Projects } from "../components/Projects";
+import { Skills } from "../components/Skills";
+import { Summary } from "../components/Summary";
+import { WorkExperience } from "../components/WorkExperience";
 import { LanguageSwitcher } from "@/components/language-switcher";
 
 export const metadata: Metadata = {
@@ -76,8 +76,8 @@ export default function ResumePage() {
         className="container relative mx-auto scroll-my-12 overflow-auto p-4 print:p-0 md:p-16"
         id="main-content"
       >
-        <LanguageSwitcher currentLang="en" className="fixed top-4 right-4 md:top-8 md:right-8 z-50 transition-all" />
-        
+        <LanguageSwitcher currentLang="pt" className="fixed top-4 right-4 md:top-8 md:right-8 z-50 transition-all" />
+
         <div className="sr-only">
           <h1>{RESUME_DATA.name}&apos;s Resume</h1>
         </div>

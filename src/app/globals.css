@@ -1,6 +1,9 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+@config "../../tailwind.config.js";
+
+@theme {
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+}
 
 @layer base {
   :root {
@@ -68,10 +71,11 @@
 
 @layer base {
   * {
-    @apply border-border;
+    border-color: hsl(var(--border));
   }
   body {
-    @apply bg-background text-foreground;
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
   }
 }
 
@@ -83,46 +87,52 @@
 @media print {
   /* Ensure perfect A4 layout */
   @page {
-    margin: 0.5in;
+    margin: 10mm 12mm; /* 10mm top/bottom, 12mm left/right to prevent cutting off text */
     size: A4;
   }
-  
+
   /* Force high-quality printing */
   * {
     -webkit-print-color-adjust: exact !important;
     color-adjust: exact !important;
     print-color-adjust: exact !important;
   }
-  
+
   /* Prevent page breaks in critical sections */
-  .print-keep-together {
+  .print-keep-together,
+  article,
+  .print-break-avoid {
     page-break-inside: avoid;
     break-inside: avoid;
   }
-  
+
   /* Optimize for single-page layout */
-  html, body {
+  html,
+  body {
     height: auto !important;
     overflow: visible !important;
   }
-  
+
   /* Enhanced text rendering for print */
   body {
     font-smooth: always;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
-  
+
   /* Ensure links are readable when printed */
   a[href]:after {
     content: none !important;
   }
-  
+
   /* Hide any remaining interactive elements */
-  button, input, textarea, select {
+  button,
+  input,
+  textarea,
+  select {
     display: none !important;
   }
-  
+
   /* Optimize spacing for print density */
   .print-compact {
     line-height: 1.3 !important;

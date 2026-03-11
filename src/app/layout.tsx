@@ -11,6 +11,7 @@ import { RESUME_DATA } from "@/data/resume-data";
 const inter = Inter({
   subsets: ["latin"],
   display: "swap",
+  variable: "--font-inter",
 });
 
 export const metadata: Metadata = {
@@ -95,8 +96,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={inter.className}>
-      <body>
+    <html lang="en" className={`${inter.variable} ${inter.className}`}>
+      <body className="antialiased font-sans">
         <ErrorBoundary>{children}</ErrorBoundary>
         <SpeedInsights />
       </body>

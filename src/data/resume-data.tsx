@@ -3,15 +3,20 @@ import type { ResumeData } from "@/lib/types";
 export const RESUME_DATA: ResumeData = {
   name: "André Gomes",
   initials: "AG",
-  location: "Lisbon, Portugal,",
+  location: "Lisbon, Portugal",
   locationLink: "https://www.google.com/maps/place/Lisbon",
-  about: "Technical Product Owner & Senior Engineer driving organizational excellence through strategic leadership and hands-on development.",
+  about:
+    "Technical Product Owner & Senior Engineer driving organizational excellence through strategic leadership and hands-on development.",
   summary: (
     <>
-      Technical Product Owner and Senior Software Engineer with 6+ years shipping enterprise-grade solutions across multi-disciplinary roles. 
-      Microsoft ecosystem expert (C#/.NET, Azure DevOps, Power BI) with proven track record of consistently delivering complex projects while 
-      simultaneously managing cross-functional teams, technical architecture, and product strategy. Unique combination of hands-on engineering 
-      excellence and strategic product ownership that drives organizational scaling, operational efficiency, and measurable business impact.
+      Technical Product Owner and Senior Software Engineer with 6+ years
+      shipping enterprise-grade solutions across multi-disciplinary roles.
+      Microsoft ecosystem expert (C#/.NET, Azure DevOps, Power BI) with proven
+      track record of consistently delivering complex projects while
+      simultaneously managing cross-functional teams, technical architecture,
+      and product strategy. Unique combination of hands-on engineering
+      excellence and strategic product ownership that drives organizational
+      scaling, operational efficiency, and measurable business impact.
     </>
   ),
   avatarUrl: "https://avatars.githubusercontent.com/u/48434290?v=4",
@@ -54,22 +59,47 @@ export const RESUME_DATA: ResumeData = {
     {
       company: "main hub_",
       link: "https://www.mainhub.pt/",
-      badges: ["Hybrid", "C#", "Azure DevOps", "Power BI", "Teams Integration"],
+      badges: [
+        "Hybrid",
+        "C#",
+        "Blazor",
+        "Tailwind CSS",
+        "Azure DevOps",
+        "Power BI",
+        "Tech Lead",
+      ],
       title: "Senior Software Engineer & Technical Product Owner",
       start: "2024",
       end: null,
       description: (
         <>
-          Full-stack engineer and technical product owner driving cross-functional collaboration, process optimization, and team coordination to accelerate product delivery and enhance development workflows.
+          Full-stack engineer and technical product owner driving
+          cross-functional collaboration, process optimization, and team
+          coordination. Leading digital transformation initiatives and
+          modernizing technology stacks for enterprise clients.
           <ul className="list-inside list-disc">
             <li>
-              Architected CI/CD automation in Azure DevOps with custom Microsoft Teams integration pipelines for PR notifications and deployment status, significantly improving team communication and code review processes
+              Spearheaded the complete digital transformation for Optimize
+              Investment Partners, modernizing the tech stack with Blazor,
+              Tailwind CSS, and Lucide icons while leading a dedicated team and
+              coordinating cross-functional API strategies.
             </li>
             <li>
-              Lead user story creation and task organization while building scalable C# backend services and translating product requirements from Figma into production-ready responsive interfaces
+              Rapidly designed, prototyped, and delivered highly successful
+              Proof of Concepts (PoCs) for 5 distinct operational platforms
+              (Client, Partner, Consultant, Business, and Internal Portals) in
+              under 4 weeks, securing executive approval.
             </li>
             <li>
-              Enabled data-driven decision making through SQL-powered Power BI analytics while establishing development workflow standards and infrastructure consistency using containerization technologies
+              Architected CI/CD automation in Azure DevOps with custom Microsoft
+              Teams integration pipelines for PR notifications and deployment
+              status, significantly improving team communication and code review
+              processes.
+            </li>
+            <li>
+              Enabled data-driven decision making through SQL-powered Power BI
+              analytics while establishing development workflow standards and
+              infrastructure consistency using containerization technologies.
             </li>
           </ul>
         </>
@@ -78,22 +108,41 @@ export const RESUME_DATA: ResumeData = {
     {
       company: "Altyra Solutions",
       link: "https://altyra.com/",
-      badges: ["Hybrid", "Project Management", "C#", "Angular", "Quality Assurance", "IT Operations"],
+      badges: [
+        "Hybrid",
+        "Project Management",
+        "C#",
+        "Angular",
+        "Quality Assurance",
+        "IT Operations",
+      ],
       title: "Project Manager, Full-Stack Developer & IT Operations Specialist",
       start: "2019",
       end: "2024",
       description: (
         <>
-          Multi-disciplinary technical leader successfully managing concurrent roles as Project Manager, Full-Stack Developer, and IT Operations specialist across 5+ years, demonstrating exceptional versatility and organizational impact across diverse technology initiatives.
+          Multi-disciplinary technical leader successfully managing concurrent
+          roles as Project Manager, Full-Stack Developer, and IT Operations
+          specialist across 5+ years, demonstrating exceptional versatility and
+          organizational impact across diverse technology initiatives.
           <ul className="list-inside list-disc">
             <li>
-              Simultaneously orchestrated multiple cross-functional teams and high-stakes client relationships while maintaining hands-on development responsibilities, delivering 100% project success rate across government and enterprise sectors
+              Simultaneously orchestrated multiple cross-functional teams and
+              high-stakes client relationships while maintaining hands-on
+              development responsibilities, delivering 100% project success rate
+              across government and enterprise sectors.
             </li>
             <li>
-              Built comprehensive full-stack solutions using C#/.NET, Angular, and modern web technologies, while establishing quality assurance frameworks and technical support systems that enabled organizational scaling and operational excellence
+              Built comprehensive full-stack solutions using C#/.NET, Angular,
+              and modern web technologies, while establishing quality assurance
+              frameworks and technical support systems that enabled
+              organizational scaling and operational excellence.
             </li>
             <li>
-              Championed knowledge transfer through extensive mentoring programs and continuous conference participation, fostering next-generation developer talent while maintaining cutting-edge technical expertise in emerging technologies and industry best practices
+              Championed knowledge transfer through extensive mentoring programs
+              and continuous conference participation, fostering next-generation
+              developer talent while maintaining cutting-edge technical
+              expertise in emerging technologies and industry best practices.
             </li>
           </ul>
         </>
@@ -116,16 +165,26 @@ export const RESUME_DATA: ResumeData = {
       end: "2021",
       description: (
         <>
-          Lead designer and developer for Erasmus+ Strategic Partnership project focused on youth social inclusion and employability through gamification and game-based learning methodologies.
+          Lead designer and developer for Erasmus+ Strategic Partnership project
+          focused on youth social inclusion and employability through
+          gamification and game-based learning methodologies.
           <ul className="list-inside list-disc">
             <li>
-              Single-handedly designed complete brand identity including logo, brand guidelines, and comprehensive brand manual for this 18-month European Union youth initiative
+              Single-handedly designed complete brand identity including logo,
+              brand guidelines, and comprehensive brand manual for this 18-month
+              European Union youth initiative.
             </li>
             <li>
-              Built and launched live European Union project website using WordPress, maintaining active status since completion with zero modifications required, demonstrating robust architecture and design excellence
+              Built and launched live European Union project website using
+              WordPress, maintaining active status since completion with zero
+              modifications required, demonstrating robust architecture and
+              design excellence.
             </li>
             <li>
-              Delivered award-winning end-to-end solution using Adobe Creative Suite (XD, Illustrator, Photoshop) as university final project, achieving exceptional academic recognition for multimedia engineering capabilities
+              Delivered award-winning end-to-end solution using Adobe Creative
+              Suite (XD, Illustrator, Photoshop) as university final project,
+              achieving exceptional academic recognition for multimedia
+              engineering capabilities.
             </li>
           </ul>
         </>
@@ -140,16 +199,24 @@ export const RESUME_DATA: ResumeData = {
       end: "2019",
       description: (
         <>
-          Software development internship focused on enterprise SAP solutions, demonstrating strong adherence to corporate standards and continuous learning in enterprise software development.
+          Software development internship focused on enterprise SAP solutions,
+          demonstrating strong adherence to corporate standards and continuous
+          learning in enterprise software development.
           <ul className="list-inside list-disc">
             <li>
-              Developed enterprise applications using SAP ABAP technology, gaining hands-on experience with mission-critical business systems and enterprise-grade development practices
+              Developed enterprise applications using SAP ABAP technology,
+              gaining hands-on experience with mission-critical business systems
+              and enterprise-grade development practices.
             </li>
             <li>
-              Maintained strict compliance with all company rules and contract guidelines, demonstrating professionalism and reliability in corporate environment
+              Maintained strict compliance with all company rules and contract
+              guidelines, demonstrating professionalism and reliability in
+              corporate environment.
             </li>
             <li>
-              Continuously acquired theoretical and practical competencies relevant to enterprise software development and industry best practices, showing strong learning agility and technical growth
+              Continuously acquired theoretical and practical competencies
+              relevant to enterprise software development and industry best
+              practices, showing strong learning agility and technical growth.
             </li>
           </ul>
         </>
@@ -175,8 +242,23 @@ export const RESUME_DATA: ResumeData = {
   ],
   projects: [
     {
+      title: "Encher Chouriços - PT Lorem Ipsum",
+      techStack: ["React 18", "TypeScript", "Vite", "Tailwind CSS"],
+      description:
+        "A highly successful, satirical European Portuguese lorem ipsum generator that replaces traditional Latin with national slang and cultural references. Features an adjustable 'intensity' slider, dark mode, and dynamic components. Built for fun and community engagement, achieving viral reach on LinkedIn.",
+      link: {
+        label: "Live Application",
+        href: "https://encher-chouricos.vercel.app/",
+      },
+    },
+    {
       title: "Multi-File Creator - VS Code Extension",
-      techStack: ["TypeScript", "VS Code API", "Node.js", "Extension Development"],
+      techStack: [
+        "TypeScript",
+        "VS Code API",
+        "Node.js",
+        "Extension Development",
+      ],
       description:
         "Published VS Code extension streamlining developer workflows by enabling rapid creation of multiple files through comma-separated input. Features context-aware targeting, customizable hotkeys, and seamless workspace integration with 32+ installs on VS Code Marketplace.",
       link: {
@@ -196,7 +278,12 @@ export const RESUME_DATA: ResumeData = {
     },
     {
       title: "Escape to Your Future - EU Project Documentation",
-      techStack: ["Project Management", "Technical Documentation", "Academic Research", "Brand Design"],
+      techStack: [
+        "Project Management",
+        "Technical Documentation",
+        "Academic Research",
+        "Brand Design",
+      ],
       description:
         "Comprehensive university capstone project documenting 18-month Erasmus+ Strategic Partnership initiative. Includes complete technical specifications, brand manuals, and academic research achieving 17/20 classification. Demonstrates project documentation excellence and European collaboration.",
       link: {

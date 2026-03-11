@@ -26,7 +26,7 @@ export const CommandMenu = ({ links }: Props) => {
 
   React.useEffect(() => {
     const down = (e: KeyboardEvent) => {
-      if (e.key === "j" && (e.metaKey || e.ctrlKey)) {
+      if (e.key === "a" && (e.metaKey || e.ctrlKey)) {
         e.preventDefault();
         setOpen((open) => !open);
       }
@@ -38,18 +38,18 @@ export const CommandMenu = ({ links }: Props) => {
 
   return (
     <>
-      <p className="fixed bottom-0 left-0 right-0 hidden border-t border-t-muted bg-white p-1 text-center text-sm text-muted-foreground xl:block print:hidden">
+      <div className="fixed bottom-4 left-1/2 -translate-x-1/2 hidden xl:flex print:hidden items-center gap-2 rounded-full border bg-background/90 px-4 py-2 text-sm shadow-sm backdrop-blur text-muted-foreground">
         Press{" "}
         <kbd className="pointer-events-none inline-flex h-5 select-none items-center gap-1 rounded border bg-muted px-1.5 font-mono text-[10px] font-medium text-muted-foreground opacity-100">
-          <span className="text-xs">{isMac ? "⌘" : "Ctrl"}</span>+J
+          <span className="text-xs">{isMac ? "⌘" : "Ctrl"}</span>+A
         </kbd>{" "}
         to open the command menu
-      </p>
+      </div>
       <Button
         onClick={() => setOpen((open) => !open)}
         variant="outline"
         size="icon"
-        className="fixed bottom-4 right-4 flex rounded-full shadow-2xl xl:hidden print:hidden"
+        className="fixed bottom-4 right-4 flex rounded-full shadow-2xl xl:hidden print:hidden backdrop-blur bg-background/90"
       >
         <CommandIcon className="my-6 size-6" />
       </Button>
@@ -63,6 +63,11 @@ export const CommandMenu = ({ links }: Props) => {
                 setOpen(false);
                 window.print();
               }}
+              onMouseDown={(e) => {
+                e.preventDefault();
+                setOpen(false);
+                window.print();
+              }}
             >
               <span>Print</span>
             </CommandItem>
@@ -72,6 +77,11 @@ export const CommandMenu = ({ links }: Props) => {
               <CommandItem
                 key={url}
                 onSelect={() => {
+                  setOpen(false);
+                  window.open(url, "_blank");
+                }}
+                onMouseDown={(e) => {
+                  e.preventDefault();
                   setOpen(false);
                   window.open(url, "_blank");
                 }}
