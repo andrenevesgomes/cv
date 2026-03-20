@@ -273,7 +273,7 @@ export const RESUME_DATA: ResumeData = {
         "Production-ready Portuguese IBAN generator for fintech development and testing. Implements complete IBAN validation algorithm with mod-97 checksum calculation, supporting all major Portuguese banks. Used by developers for financial software testing and demonstrations.",
       link: {
         label: "Live Application",
-        href: "https://andrenevesgomes.github.io/iban-fresquinho/",
+        href: "https://iban-fresquinho.vercel.app",
       },
     },
     {

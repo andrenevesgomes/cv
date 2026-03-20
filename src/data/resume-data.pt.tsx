@@ -282,7 +282,7 @@ export const RESUME_DATA_PT: ResumeData = {
         "Gerador português de IBANs em ambiente local de fácil uso para desenvolvimento e testes de fintech. Implementa validação completa de algoritmos IBAN com o cálculo de checksum mod-97, suportando as maiores entidades bancárias portuguesas. Permite rápida criação de simulacros para teste de software bancário.",
       link: {
         label: "Aplicação Live",
-        href: "https://andrenevesgomes.github.io/iban-fresquinho/",
+        href: "https://iban-fresquinho.vercel.app",
       },
     },
     {
